@@ -1,26 +1,13 @@
 ﻿/*================================= 
         Font-Family's Start
   =================================*/
-@font-face {
-    font-family: 'Just tell me what regular (Version 2)';
-    src: url('../../Fonts/Just tell me what regular (Version 2).otf') format('opentype');
-}
 
-@font-face {
-    font-family: 'ProximaNova-Regular';
-    src: url('../../Fonts/ProximaNova-Regular.otf') format('opentype');
-}
+/*
 
-@font-face {
-    font-family: 'Proxima Nova Semibold';
-    src: url('../../Fonts/Proxima Nova Semibold.otf') format('opentype');
-}
+     font-family: 'Karla', sans-serif;
+     font-family: 'Lora', serif;
 
-@font-face {
-    font-family: 'Proxima Nova Thin';
-    src: url('../../Fonts/Proxima Nova Thin.otf') format('opentype');
-}
-
+*/
 
 /*================================= 
         Font-Family's End
@@ -39,47 +26,39 @@ html, body {
 /*================================= 
     Navbar Section Styling
   =================================*/
-
-
-/*.menu-bg-color {
-    width: 100%;
-    padding: 15px;
-    background: #102e19;
-    transform: skew(38deg);
-    border-right: 30px solid transparent;
-}*/
-.menu-bg-color {
-    background-color: #102e19;
-    background-image: -webkit-linear-gradient(36deg, white 9%, #102e19 8%);
-    height: 90px;
+#top-nav {
+    padding: 15px 0;
+    background: #1b3409;
 }
 
-.zero-skew {
-    transform: skew(0deg) !important;
+.landscap-text {
+    font-size: 16px;
+    color: #ebf7e3;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-family: 'Karla', sans-serif;
 }
 
-
-.no-skew {
-    transform: skew(0deg);
+.phone-text {
+    font-size: 18px;
+    color: #ebf7e3;
+    font-weight: 400;
+    margin-bottom: 0;
+    font-family: 'Karla', sans-serif;
 }
 
-
-.navbar-brand {
-    margin-right: 6rem;
-    margin-left: 4.4%;
-}
-
-.nav-bg-color {
-    background: #ffffff !important;
-    transform: skew(0deg);
-}
-
-.navbar {
-    padding: 0px 0px 0 0px;
+.email-text {
+    font-size: 18px;
+    color: #ebf7e3;
+    font-weight: 400;
+    margin-bottom: 0;
+    font-family: 'Karla', sans-serif;
 }
 
 /*Nav DEsgin End*/
 #home {
+    background: #d4f6bc;
     position: relative;
     background-size: cover;
     background-position: center;
@@ -93,11 +72,6 @@ html, body {
     background-repeat: no-repeat;
 }
 
-/*.sleep {
-    padding: 0px 100px 0px 100px;
-    transition: all .4s ease-in-out;
-}*/
-
 .nav-setting-on-scroll {
     padding: 0px 20px !important;
 }
@@ -106,16 +80,14 @@ html, body {
     transition: all 0.6s ease-in-out;
 }
 
-.navbar-nav {
-    margin-left: 212px;
-}
+
 
 .nav-padding {
     padding: 0px 0px 0 80px;
 }
 
 .nav-item {
-    padding: 0px 10px 0 23px;
+    padding: 0px 20px 0 0px;
     position: relative;
 }
 
@@ -132,45 +104,27 @@ html, body {
     transition: all .5s ease-in-out;
 }
 
-/*.nav-padding {
-    padding: 20px 36px 0px 90px;
-}*/
+.nav-bg-color {
+    background-color: rgb(155, 215, 112);
+}
+
 
 .active .nav-link {
     position: relative;
     font-size: 20px;
-    color: #ffffff !important;
+    color: #003711 !important;
     text-transform: uppercase !important;
-    font-family: 'ProximaNova-Regular';
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
 }
 
-    .active .nav-link::before {
-        content: '';
-        position: absolute;
-        background: #9cc212;
-        width: 85%;
-        height: 12px;
-        top: -24px;
-        left: 7px;
-    }
-
-    .active .nav-link::after {
-        content: '';
-        position: absolute;
-        background: #9cc212;
-        width: 85%;
-        height: 12px;
-        left: 7px;
-        bottom: -23px;
-    }
-
 .navbar-nav .nav-link {
-    /*transform: skew(-38deg);*/
-    color: #ffffff;
+    color: #ebf7e3;
     font-size: 20px;
     padding: 8px 13px 5px 13px;
     text-transform: uppercase;
-    font-family: 'ProximaNova-Regular';
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
 }
 
 
@@ -184,10 +138,8 @@ html, body {
 }
 
 .content-setting {
-    padding: 200px 0;
+    padding: 206px 0;
 }
-
-
 
 #home .main-banner-text {
     letter-spacing: 0px;
@@ -195,64 +147,68 @@ html, body {
     color: #ffffff;
     text-align: center;
     text-transform: capitalize;
-    font-family: 'Just tell me what regular (Version 2)';
-    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.75);
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    text-shadow: 2.5px 4.33px 5px rgba(0, 0, 0, 0.75);
 }
 
 
 #home .main-banner-desc {
     font-size: 20px;
-    color: #9cc212;
-    font-family: 'Proxima Nova Semibold';
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
 }
 
 
 .btn-contact {
-    width: 208px;
-    height: 64px;
+    width: 202px;
+    height: 59px;
     font-size: 20px;
     line-height: 46px;
     border-radius: 0px;
-    color: #ffffff;
-    border-width: 2px;
-    border-color: rgb(142, 176, 18);
+    color: #ebf7e3;
     border-style: solid;
-    background: transparent;
+    border-width: 2px;
+    border-color: rgb(235, 247, 227);
+    border-radius: 31px;
+    background-color: rgba(27, 52, 9, 0.949);
+    box-shadow: 2.5px 4.33px 10px 0px rgba(0, 0, 0, 0.6);
     text-transform: uppercase;
-    font-family: 'Proxima Nova Semibold';
-    box-shadow: 0px 2px 4.75px 0.25px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
 }
 
     .btn-contact:hover {
         text-decoration: none;
-        color: #ffffff;
+        color: #ebf7e3;
     }
 
 
 
 
-.btn-gallery {
-    width: 208px;
-    height: 64px;
+.btn-service {
+    width: 202px;
+    height: 59px;
     font-size: 20px;
     line-height: 46px;
     border-radius: 0px;
-    color: #ffffff;
-    font-weight: bold;
+    color: #ebf7e3;
     border-style: solid;
     border-width: 2px;
-    border-color: rgb(16, 46, 25);
-    background-color: rgba(156, 194, 18, 0.902);
-    border-radius: 0px;
+    border-color: rgb(235, 247, 227);
+    border-radius: 31px;
+    background-color: rgba(27, 52, 9, 0.949);
+    box-shadow: 2.5px 4.33px 10px 0px rgba(0, 0, 0, 0.6);
     text-transform: uppercase;
-    font-family: 'Proxima Nova Semibold';
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
 }
 
-    .btn-gallery:hover {
+    .btn-service:hover {
         text-decoration: none;
-        color: #ffffff;
+        color: #ebf7e3;
     }
-
 
 
 
@@ -266,613 +222,482 @@ html, body {
         color: #fafcfe;
     }
 
-#home .owl-theme .owl-nav {
+.owl-theme .owl-nav.disabled + .owl-dots {
     position: relative;
-    margin-top: 10px;
+    top: -124px;
 }
 
-#home .owl-carousel .owl-nav button.owl-next {
-    position: absolute;
-    right: 128px;
-    bottom: 250px;
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #fff;
+    width: 5px;
+    height: 46px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 5px;
+    height: 30px;
+    margin: -5px 4px;
+    border-radius: 0px;
     background: #ffffff;
-    width: 36px;
-    height: 145px;
-    border-radius: 0;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(16, 46, 25);
 }
 
-#home .owl-carousel .owl-nav button.owl-prev {
+/*#home .left-border {
+    border-left-color: #d4f6bc !important;
+    border-left-width: 1367px !important;
+    border-top-width: 339px !important;
+    left: 0;
+}*/
+#home .right-border {
+    border-right-color: #d4f6bc !important;
+    border-right-width: 1366px !important;
+    border-top-width: 858px !important;
+    right: 0;
+}
+
+#home .left-border {
+    border-left-color: #d4f6bc !important;
+    border-left-width: 1366px !important;
+    border-top-width: 861px !important;
+    left: 0px;
+}
+
+#home .borders {
+    background: none;
+    border: 0 solid transparent;
+    height: 10px;
     position: absolute;
-    left: 128px;
-    bottom: 250px;
-    background: #ffffff;
-    width: 36px;
-    height: 145px;
-    opacity: 1;
-    border-radius: 0;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(16, 46, 25);
+    z-index: -9;
+    width: 0px;
 }
-
-    #home .owl-carousel .owl-nav button.owl-prev:hover {
-        color: #ffffff;
-    }
-
-#home .owl-theme .owl-nav [class*=owl-]:hover {
-    background: #9cc212;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-
-
-#home .flaticon-next:before {
-    content: "\f105";
-    font-size: 22px;
-    margin-left: 1px;
-    background: transparent;
-    padding: 0px;
-    color: #17321f;
-}
-
-#home .flaticon-next:hover:before {
-    color: #ffffff;
-}
-
-#home .flaticon-left:before {
-    content: "\f100";
-    font-size: 22px;
-    margin-left: 1px;
-    background: transparent;
-    padding: 0px;
-    color: #17321f;
-}
-
-#home .flaticon-left:hover:before {
-    color: #ffffff;
-}
-
 
 /*================================= 
-      Service Section Styling
+      About Section Styling
   =================================*/
-#services {
-    padding: 60px 0;
+#about {
+    background: #d4f6bc;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.about-text {
+    font-size: 50px;
+    color: rgb(27, 52, 9);
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    text-shadow: 1.5px 2.598px 2px rgba(0, 0, 0, 0.5);
+}
+
+.about-desc {
+    font-size: 20px;
+    color: #1b3409;
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+}
+
+.about-padding {
+    padding: 0 0px 0 121px;
+}
+/*================================= 
+       Service Section  Styling
+  =================================*/
+#services {
+    padding: 30px 0;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .service-text {
-    font-size: 40px;
-    color: #9cc212;
-    font-family: 'Just tell me what regular (Version 2)';
-    text-shadow: 0.5px 0.866px 0px rgba(0, 0, 0, 0.7);
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Lora', serif;
 }
 
 .service-desc {
     font-size: 20px;
-    color: #2c2c2c;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+}
+
+.card-bg-color {
+    padding: 30px 30px;
     text-align: center;
-    font-family: 'ProximaNova-Regular';
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2.5px 4.33px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-.service-desc {
-    font-size: 20px;
-    color: #2c2c2c;
-    text-align: center;
-    font-family: 'ProximaNova-Regular';
-}
-
-.img-position-left {
-    position: absolute;
-    left: 19.5%;
-    bottom: 11px;
-}
-
-.img-position-right {
-    position: absolute;
-    right: 19%;
-    bottom: 12px;
-}
-
-.service-border {
-    border: 3px dashed #c8c8c8;
-    text-align: center;
-    padding: 61px 30px;
-}
-
-    .service-border:hover {
-        background: #f1f1f1;
-        box-shadow: 2.5px 4.33px 14px 0px rgba(16, 46, 25, 0.5);
-        background-image: url('../../Images/bg-img-hover.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: bottom;
+    .card-bg-color:hover .card-icon {
+        border: 3px solid #9bd770;
+        background: #1b3409;
     }
+
+.card-icon {
+    width: 94px;
+    height: 94px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(27, 52, 9);
+    border-radius: 50%;
+    background-color: rgb(155, 215, 112);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+}
 
 .service-heading {
-    font-size: 32px;
-    color: #102e19;
-    text-transform: uppercase;
-    font-family: 'Just tell me what regular (Version 2)';
+    font-size: 23px;
+    color: #1b3409;
+    font-weight: bold;
+    font-family: 'Lora', serif;
 }
 
-.service-text-desc {
-    font-size: 18px;
-    color: #2c2c2c;
-    font-family: 'ProximaNova-Regular';
+.service-work-desc {
+    font-size: 16px;
+    color: #393939;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
 }
 
-#services .no-display {
-    display: none;
+#services .flaticon-fertilizer:before {
+    content: "\f103";
+    font-size: 60px;
+    color: #fdfefc;
+    margin-left: 0px;
 }
 
-#services .btn-load-service {
-    font-size: 22px;
-    width: 246px;
-    height: 87px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(156, 194, 18);
-    background-color: rgba(16, 46, 25, 0.902);
-    font-family: 'Proxima Nova Semibold';
-    color: #ffffff;
-    box-shadow: 0px 5px 5px 0px rgba(39, 66, 48, 0.5);
-}
-
-#services .read-text {
-    font-size: 22px;
-    color: #102e19;
-    font-family: 'Just tell me what regular (Version 2)';
-}
-
-    #services .read-text:hover {
-        text-decoration: none;
-        color: #102e19;
-    }
-/*================================= 
-       Gallery Section Styling
-  =================================*/
-#gallery {
-    padding: 60px 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-.img-position-gallery-left {
-    position: absolute;
-    left: 14%;
-    bottom: 12px;
-}
-
-.img-position-gallery-right {
-    position: absolute;
-    right: 14%;
-    bottom: 12px;
-}
-
-.containing {
-    position: relative;
-    width: 100%;
-}
-
-.image {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(156, 194, 18,0.6);
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    -webkit-transform: scale(0);
-    -ms-transform: scale(0);
-    transform: scale(0);
-    -webkit-transition: .3s ease;
-    transition: .3s ease;
-}
-
-
-
-.containing:hover .overlay {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-}
-
-.text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-#gallery .flaticon-eye:before {
-    content: "\f101";
-    margin-left: 0;
-    font-size: 45px;
-}
-/*================================= 
-       Work Section Styling
-  =================================*/
-#bg-banner {
-    padding: 60px 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.img-position-work-left {
-    position: absolute;
-    left: 11%;
-    bottom: 12px;
-}
-
-.img-position-work-right {
-    position: absolute;
-    right: 11%;
-    bottom: 12px;
-}
-
-#work .card {
-    background-color: transparent;
-}
-
-    #work .card:hover {
-        background: #ffffff;
-    }
-
-#work .card-body {
-    border-right: 2px dashed #959595;
-    border-left: 2px dashed #959595;
-    border-bottom: 2px dashed #959595;
-}
-
-.work-heading {
-    position: relative;
-    font-size: 24px;
-    color: #102e19;
-    text-transform: uppercase;
-    font-family: 'Just tell me what regular (Version 2)';
-}
-
-    .work-heading::after {
-        content: '';
-        position: absolute;
-        background: #9cc212;
-        width: 31%;
-        height: 2px;
-        bottom: -13px;
-        left: 33%;
-    }
-
-.work-desc {
-    font-size: 18px;
-    color: #2c2c2c;
-    font-family: 'ProximaNova-Regular';
-}
-
-#work .read-texts {
-    font-size: 18px;
-    color: #102e19;
-    font-family: 'Just tell me what regular (Version 2)';
-}
-
-    #work .read-texts:hover {
-        text-decoration: none;
-        color: #102e19;
-    }
-
-#work .owl-theme .owl-nav {
-    position: relative;
-    margin-top: 10px;
-}
-
-#work .owl-carousel .owl-nav button.owl-next {
-    position: absolute;
-    right: -83px;
-    bottom: 250px;
-    background: #102e19;
-    width: 36px;
-    height: 145px;
-    border-radius: 0;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(16, 46, 25);
-}
-
-#work .owl-carousel .owl-nav button.owl-prev {
-    position: absolute;
-    left: -83px;
-    bottom: 250px;
-    background: #9cc212;
-    width: 36px;
-    height: 145px;
-    opacity: 1;
-    border-radius: 0;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(16, 46, 25);
-}
-
-#work .owl-theme .owl-nav [class*=owl-]:hover {
-    background: #9cc212;
-    color: #a3111b;
-    text-decoration: none;
-}
-
-
-
-#work .flaticon-next:before {
-    content: "\f105";
-    font-size: 22px;
-    margin-left: 1px;
-    background: transparent;
-    padding: 0px;
-    color: #ffffff;
-}
-
-#work .flaticon-left:before {
+#services .flaticon-pouring:before {
     content: "\f100";
-    font-size: 22px;
-    margin-left: 1px;
-    background: transparent;
-    padding: 0px;
-    color: #ffffff;
+    font-size: 60px;
+    color: #fdfefc;
+    margin-left: 0px;
 }
+
+#services .flaticon-plant:before {
+    content: "\f101";
+    font-size: 60px;
+    color: #fdfefc;
+    margin-left: 0px;
+}
+
+#services .flaticon-trim:before {
+    content: "\f102";
+    font-size: 60px;
+    color: #fdfefc;
+    margin-left: 0px;
+}
+
+.read-text {
+    text-decoration: none;
+    color: #1b3409;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+}
+
+    .read-text:hover {
+        text-decoration: none;
+        color: #1b3409;
+    }
 /*================================= 
-        Team Section Styling
+       Blog Section Styling
   =================================*/
+#blog {
+    padding: 40px 0;
+    background: #d4f6bc;
+}
+
+    #blog .blog-text {
+        font-size: 50px;
+        color: rgb(27, 52, 9);
+        font-weight: bold;
+        font-family: 'Lora', serif;
+        text-shadow: 1.5px 2.598px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    #blog .blog-desc {
+        font-size: 18px;
+        color: #1b3409;
+        font-weight: 400;
+        font-family: 'Karla', sans-serif;
+    }
+
+    #blog .img-border {
+        border: 3px solid #1b3409
+    }
+
+    #blog .blog-heading {
+        font-size: 24px;
+        color: #1b3409;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: 'Karla', sans-serif;
+    }
+
+    #blog .blog-date {
+        font-size: 15px;
+        color: #1b3409;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-family: 'Karla', sans-serif;
+    }
+
+    #blog .blog-news-desc {
+        font-size: 16px;
+        color: #55595f;
+        font-weight: 400;
+        font-family: 'Karla', sans-serif;
+    }
+
+    #blog .no-display {
+        display: none;
+    }
+/*================================= 
+          Read More Styling
+  =================================*/
+.experience-team {
+    font-size: 50px;
+    color: rgb(27, 52, 9);
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    text-shadow: 1.5px 2.598px 2px rgba(0, 0, 0, 0.5);
+}
+
+.exp-desc {
+    font-size: 18px;
+    color: #1b3409;
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+}
+
 #team {
-    padding: 25px 0;
-    background-position: bottom;
+    padding: 40px 0;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.team-border {
-    border: 3px dashed #959595;
-    padding: 60px 40px;
-    text-align: center;
-}
 
-    .team-border:hover {
-        background: #102e19;
-        border: 3px dashed #9cc212;
+
+    #team .img-radius {
+        width: 134px;
+        height: 134px;
+        border: 3px solid #9bd770;
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.75);
     }
 
-        .team-border:hover .team-member-text {
-            color: #ffffff;
-        }
-
-        .team-border:hover .desgination-text {
-            color: #ffffff;
-        }
-
-        .team-border:hover .read-textss {
-            color: #ffffff !important;
-        }
-
-        .team-border:hover .image-radius {
-            border: 3px solid #9cc212;
-        }
-
-        .team-border:hover .team-desc-text {
-            color: #ffffff;
-        }
-
-#team .read-textss {
-    font-size: 18px;
-    color: #102e19;
-    font-family: 'Just tell me what regular (Version 2)';
-}
-
-    #team .read-textss:hover {
-        text-decoration: none;
-        color: #102e19;
+    #team .team-desc {
+        font-size: 18px;
+        color: #1b3409;
+        font-weight: 400;
+        font-family: 'Karla', sans-serif;
     }
 
-.team-member-text {
-    font-size: 30px;
-    color: #9cc212;
+.team-body {
+    background: #9bd770;
+    padding: 15px 15px;
+}
+
+.team-member-name {
+    font-size: 22px;
+    color: #1b3409;
+    font-weight: bold;
     text-transform: uppercase;
-    font-family: 'Just tell me what regular (Version 2)';
+    font-family: 'Lora', serif;
 }
 
 .desgination-text {
-    font-size: 18px;
-    color: #102e19;
+    font-size: 14px;
+    color: #1b3409;
+    font-weight: bold;
+    margin-bottom: 0;
     text-transform: uppercase;
-    font-family: 'ProximaNova-Regular';
+    font-family: 'Karla', sans-serif;
 }
 
-.team-desc-text {
-    font-size: 18px;
-    color: #2c2c2c;
-    font-family: 'ProximaNova-Regular';
+.team-card {
+    padding: 40px 24px;
+    background: #ffffff;
+    box-shadow: 2.5px 4.33px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-#team .owl-theme .owl-nav {
-    position: relative;
-    margin-top: 10px;
+#team-card:hover .img-radius {
+    border: 3px solid #1b3409;
 }
 
-#team .owl-carousel .owl-nav button.owl-next {
-    position: absolute;
-    right: -83px;
-    bottom: 250px;
-    background: #102e19;
-    width: 36px;
-    height: 145px;
-    border-radius: 0;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(16, 46, 25);
+#team-card:hover .team-body {
+    background: #1b3409;
 }
 
-#team .owl-carousel .owl-nav button.owl-prev {
-    position: absolute;
-    left: -83px;
-    bottom: 250px;
-    background: #9cc212;
-    width: 36px;
-    height: 145px;
-    opacity: 1;
-    border-radius: 0;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(16, 46, 25);
+#team-card:hover .team-member-name {
+    color: #9bd770;
 }
 
-#team .owl-theme .owl-nav [class*=owl-]:hover {
-    background: #9cc212;
-    color: #a3111b;
-    text-decoration: none;
-}
-
-
-
-#team .flaticon-next:before {
-    content: "\f105";
-    font-size: 22px;
-    margin-left: 1px;
-    background: transparent;
-    padding: 0px;
-    color: #ffffff;
-}
-
-#team .flaticon-left:before {
-    content: "\f100";
-    font-size: 22px;
-    margin-left: 1px;
-    background: transparent;
-    padding: 0px;
-    color: #ffffff;
+#team-card:hover .desgination-text {
+    color: #9bd770;
 }
 /*================================= 
-       Contact Section Styling
+        Contact Section Styling
   =================================*/
-#contact-bg-banner {
-    padding: 60px 0;
+#contact {
+    padding: 30px 0 0 0;
+    background-color: #d4f6bc;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-    #contact-bg-banner ::placeholder {
-        font-size: 15px;
-        color: #809185;
-        font-family: 'Proxima Nova Thin';
+    #contact .contact-text {
+        font-size: 50px;
+        color: rgb(27, 52, 9);
+        font-weight: bold;
+        font-family: 'Lora', serif;
+        text-shadow: 1.5px 2.598px 2px rgba(0, 0, 0, 0.5);
     }
 
-.field-name {
-    width: 100%;
-    height: 59px;
-    font-size: 18px;
-    padding: 15px;
-    color: #809185;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(39, 66, 48);
-    background-color: rgba(247, 247, 247, 0.91);
-}
+    #contact .contact-desc {
+        font-size: 18px;
+        color: #1b3409;
+        font-weight: 400;
+        font-family: 'Karla', sans-serif;
+    }
 
-.textarea-name {
-    width: 100%;
-    font-size: 18px;
-    padding: 15px;
-    resize: none;
-    color: #809185;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgb(39, 66, 48);
-    background-color: rgba(247, 247, 247, 0.91);
+    #contact ::placeholder {
+        font-size: 14px;
+        color: #84907a;
+        font-weight: 400;
+        font-family: 'Karla', sans-serif;
+    }
+
+    #contact .input-field {
+        width: 100%;
+        height: 58px;
+        padding: 18px;
+        border-radius: 29px;
+        font-size: 14px;
+        color: #84907a;
+        font-weight: 400;
+        font-family: 'Karla', sans-serif;
+        background-color: rgba(255, 255, 255, 0.922);
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    #contact .textarea-field {
+        width: 100%;
+        padding: 18px;
+        border-radius: 29px;
+        font-size: 14px;
+        color: #84907a;
+        font-weight: 400;
+        font-family: 'Karla', sans-serif;
+        background-color: rgba(255, 255, 255, 0.922);
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    }
+
+.contact-bg-banner {
+    padding: 80px 0 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .btn-submit {
     width: 100%;
-    height: 64px;
-    border-style: solid;
-    border-width: 1px;
-    font-size: 18px;
+    height: 58px;
+    border: none;
+    font-size: 20px;
     color: #ffffff;
-    text-transform: uppercase;
-    border-color: rgb(156, 194, 18);
-    background-color: rgb(16, 46, 25);
-    font-family: 'Proxima Nova Semibold';
+    font-weight: bold;
+    border-radius: 29px;
+    font-family: 'Karla', sans-serif;
+    background-color: rgba(27, 52, 9, 0.922);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-.banner-bg-color {
-    text-align: center;
-    padding: 40px 40px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: rgb(156, 194, 18);
-    background-image: -moz-radial-gradient( 50% 50%, circle closest-side, rgb(43,114,65) 0%, rgb(33,82,48) 100%);
-    background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgb(43,114,65) 0%, rgb(33,82,48) 100%);
-    background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgb(43,114,65) 0%, rgb(33,82,48) 100%);
+.bg-card {
+    padding: 22px 52px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.922);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
-.connect-text {
-    font-size: 32px;
-    color: #ffffff;
-    font-family: 'Just tell me what regular (Version 2)';
-}
+    .bg-card:hover {
+        background-color: #1e350b;
+    }
 
-.contact-desc {
-    font-size: 16px;
-    color: #ffffff;
+        .bg-card:hover .body-text {
+            color: #ffffff;
+        }
+
+            .bg-card:hover .body-text a {
+                color: #ffffff !important;
+            }
+
+
+.body-text {
+    font-size: 20px;
+    color: #1b3409;
+    font-weight: 400;
     margin-bottom: 0;
-    font-family: 'ProximaNova-Regular';
+    font-family: 'Karla', sans-serif;
 }
 
-.contact-heading-text {
-    font-size: 18px;
-    color: #ffffff;
-    margin-bottom: 0;
-    font-family: 'ProximaNova-Regular';
+.flaticon-old-telephone-ringing:before {
+    content: "\f104";
+    margin-left: 0;
+    font-size: 48px;
+    color: #1b3409;
 }
 
-#contact-bg-banner [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-    font-family: Flaticon;
-    font-size: 53.6px;
-    font-style: normal;
-    margin-left: 0px;
+.bg-card:hover .flaticon-old-telephone-ringing:before {
     color: #ffffff;
 }
 
-.footer-bg-color {
-    padding: 28px 0 10px 0;
-    background-image: -moz-linear-gradient( 90deg, rgb(43,114,65) 0%, rgb(33,82,48) 100%);
-    background-image: -webkit-linear-gradient( 90deg, rgb(43,114,65) 0%, rgb(33,82,48) 100%);
-    background-image: -ms-linear-gradient( 90deg, rgb(43,114,65) 0%, rgb(33,82,48) 100%);
+.flaticon-mail-black-envelope-symbol:before {
+    content: "\f105";
+    margin-left: 0;
+    font-size: 48px;
+    color: #1b3409;
 }
 
-.footer-font {
-    font-size: 18px;
+.bg-card:hover .flaticon-mail-black-envelope-symbol:before {
     color: #ffffff;
-    font-family: 'ProximaNova-Regular';
 }
 
+.flaticon-map-pin-marked:before {
+    content: "\f106";
+    margin-left: 0;
+    font-size: 48px;
+    color: #1b3409;
+}
 
+.bg-card:hover .flaticon-map-pin-marked:before {
+    color: #ffffff;
+}
+
+#contact .email-link-style {
+    color: #003711;
+    text-decoration: none;
+}
+
+    #contact .email-link-style:hover {
+        color: #003711;
+        text-decoration: none;
+    }
+
+#contact .footer-font {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+}
+
+.bg-footer-color {
+    width: 100%;
+    height: 40px;
+    background: #003711;
+}
 /*================================= 
           Read More Styling
   =================================*/
@@ -895,6 +720,10 @@ html, body {
 
 
 /*=================== Custome Margins ===================*/
+.mt-35-p {
+    margin-top: 35%;
+}
+
 .mt--180 {
     margin-top: -180px;
 }
@@ -1336,6 +1165,10 @@ html, body {
     margin-bottom: 160px;
 }
 
+.mb-20 {
+    margin-bottom: 20px;
+}
+
 .b-50 {
     bottom: 50px;
 }
@@ -1412,17 +1245,20 @@ button:focus {
 }
 
 .btn-load-more {
-    width: 200px;
-    height: 58px;
+    font-size: 22px;
+    width: 202px;
+    height: 59px;
     color: #ffffff;
-    border-radius: 3px;
-    font-weight: 500;
-    border: none;
-    border-radius: 3px;
+    border: 2px solid #ebf7e3;
+    border-radius: 31px;
+    background-color: rgba(27, 52, 9, 0.949);
+    font-weight: bold;
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgb(209, 0, 56);
+    font-family: 'Karla', sans-serif;
+    box-shadow: 2.5px 4.33px 10px 0px rgba(0, 0, 0, 0.6);
 }
+
+
 
 
 .btn:focus {
@@ -1450,736 +1286,482 @@ button:focus {
 }
 
 /*------ Scrolling Css --------*/
-#services .service-text-desc {
+#services .service-work-desc {
     height: 150px;
     overflow: auto;
 }
     /* width */
-    #services .service-text-desc::-webkit-scrollbar {
+    #services .service-work-desc::-webkit-scrollbar {
         width: 5px;
     }
 
     /* Track */
-    #services .service-text-desc::-webkit-scrollbar-track {
+    #services .service-work-desc::-webkit-scrollbar-track {
         box-shadow: inset 0 0 5px #102e19;
         border-radius: 20px;
     }
 
     /* Handle */
-    #services .service-text-desc::-webkit-scrollbar-thumb {
+    #services .service-work-desc::-webkit-scrollbar-thumb {
         background: #102e19;
         border-radius: 20px;
     }
 
         /* Handle on hover */
-        #services .service-text-desc::-webkit-scrollbar-thumb:hover {
+        #services .service-work-desc::-webkit-scrollbar-thumb:hover {
             background: #102e19;
         }
 /*---------------------------*/
 
 
-/*------ Scrolling Css Another --------*/
-/* width */
-#work .work-desc {
-    height: 150px;
-    overflow: auto;
-}
-
-    #work .work-desc::-webkit-scrollbar {
-        width: 5px;
-    }
-
-    /* Track */
-    #work .work-desc::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px #102e19;
-        border-radius: 20px;
-    }
-
-    /* Handle */
-    #work .work-desc::-webkit-scrollbar-thumb {
-        background: #102e19;
-        border-radius: 20px;
-    }
-
-        /* Handle on hover */
-        #work .work-desc::-webkit-scrollbar-thumb:hover {
-            background: #102e19;
-        }
-/*---------------------------*/
-
-
-/*------ Scrolling Css Another --------*/
-/* width */
-#team .team-desc-text {
-    height: 150px;
-    overflow: auto;
-}
-
-    #team .team-desc-text::-webkit-scrollbar {
-        width: 5px;
-    }
-
-    /* Track */
-    #team .team-desc-text::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px #ffffff;
-        border-radius: 20px;
-    }
-
-    /* Handle */
-    #team .team-desc-text::-webkit-scrollbar-thumb {
-        background: #ffffff;
-        border-radius: 20px;
-    }
-
-        /* Handle on hover */
-        #team .team-desc-text::-webkit-scrollbar-thumb:hover {
-            background: #ffffff;
-        }
-/*---------------------------*/
 
 
 
 
 /*================ Media Query ===============*/
 @media screen and (max-width: 1500px) {
+    .content-setting {
+        padding: 225px 0;
+    }
 }
 
-@media screen and (max-width: 1367px) {
+@media screen and (max-width: 1366px) {
+    .content-setting {
+        padding: 208px 0;
+    }
 }
 
 @media screen and (max-width: 1024px) {
-    .navbar-brand {
-        margin-right: 0rem;
-        margin-left: 0;
-    }
-
-    .navbar-nav .nav-link {
+    .email-text {
         font-size: 16px;
     }
 
-    .menu-bg-color {
-        height: 83px;
+    .phone-text {
+        font-size: 16px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 18px;
+    }
+
+    .nav-item {
+        padding: 0px 12px 0 0px;
     }
 
     #home .main-banner-text {
-        font-size: 36px;
+        font-size: 35px;
     }
 
     #home .main-banner-desc {
-        font-size: 17px;
+        font-size: 16px;
     }
 
-    .btn-gallery {
-        width: 160px;
-        height: 50px;
+    .content-setting {
+        padding: 153px 0;
+    }
+
+    .about-text {
+        font-size: 36px;
+    }
+
+    .about-desc {
         font-size: 18px;
-        line-height: 32px;
     }
 
-    .btn-contact {
-        width: 160px;
-        height: 50px;
-        font-size: 18px;
-        line-height: 32px;
-    }
-
-    #home .owl-carousel .owl-nav button.owl-next {
-        bottom: 246px;
-        width: 36px;
-        height: 113px;
-    }
-
-    #home .owl-carousel .owl-nav button.owl-prev {
-        bottom: 246px;
-        width: 36px;
-        height: 113px;
-    }
-
-    .img-position-right {
-        bottom: 2px;
-    }
-
-    .img-position-left {
-        bottom: 2px;
+    .about-padding {
+        padding: 0px 0px 0 94px;
     }
 
     .service-text {
-        font-size: 30px;
+        font-size: 36px;
     }
 
     .service-desc {
-        font-size: 17px;
-    }
-
-    #services .service-text-desc {
-        height: 185px;
+        font-size: 18px;
     }
 
     .service-heading {
-        font-size: 28px;
+        font-size: 20px;
     }
 
-    .service-border {
-        padding: 51px 19px;
+    #services .service-work-desc {
+        height: 202px;
     }
 
-    #work .work-desc {
-        height: 196px;
+    #blog .blog-text {
+        font-size: 36px;
     }
 
-    #work .owl-carousel .owl-nav button.owl-prev {
-        left: -47px;
+    #blog .blog-heading {
+        font-size: 22px;
     }
 
-    #work .owl-carousel .owl-nav button.owl-next {
-        right: -47px;
+    #blog .blog-date {
+        font-size: 14px;
     }
 
-    #team .owl-carousel .owl-nav button.owl-prev {
-        left: -47px;
+    #blog .blog-news-desc {
+        font-size: 15px;
     }
 
-    #team .owl-carousel .owl-nav button.owl-next {
-        right: -47px;
+    .btn-load-more {
+        font-size: 20px;
+        width: 178px;
+        height: 53px;
     }
 
-    #team .team-desc-text {
-        height: 214px;
+    .experience-team {
+        font-size: 36px;
     }
 
-    .team-border {
-        border: 3px dashed #959595;
-        padding: 30px 20px;
+    .exp-desc {
+        font-size: 17px;
     }
 
-    #team .team-desc-text {
-        height: 214px;
+    #team .team-desc {
+        font-size: 16px;
     }
 
-    .connect-text {
-        font-size: 28px;
+    .team-member-name {
+        font-size: 20px;
     }
 
-    .field-name {
-        height: 57px;
+    #contact .contact-text {
+        font-size: 36px;
+    }
+
+    .bg-card {
+        padding: 22px 20px;
+    }
+
+    .body-text {
+        font-size: 17px;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .navbar {
-        padding: 2px 15px 2px 15px;
-    }
-
-    .menu-bg-color {
-        background-image: unset;
-        height: auto;
-    }
-
-    .active .nav-link::before {
-        width: 19%;
-        height: 7px;
-        top: -5px;
-        left: 7px;
-    }
-
-    .active .nav-link::after {
-        width: 19%;
-        height: 7px;
-        left: 7px;
-        bottom: -5px;
-    }
-
-    .nav-item {
-        padding: 20px 10px 10px 91px;
-    }
-
-    #home .owl-carousel .owl-nav button.owl-next {
-        right: 42px;
-    }
-
-    #home .owl-carousel .owl-nav button.owl-prev {
-        left: 42px;
-    }
-
-    #home .main-banner-text {
-        font-size: 30px;
-    }
-
-    #home .main-banner-desc {
-        font-size: 15px;
-    }
-
-    .btn-gallery {
-        font-size: 16px;
-        line-height: 35px;
-    }
-
-    .btn-contact {
-        font-size: 16px;
-        line-height: 35px;
-    }
-
-    .img-position-left {
-        left: 10.5%;
-        bottom: 5px;
-    }
-
-    .img-position-right {
-        right: 9.5%;
-        bottom: 5px;
-    }
-
-    .service-desc {
-        font-size: 15px;
-    }
-
-    #services .btn-load-service {
-        font-size: 19px;
-        width: 176px;
-        height: 56px;
-    }
-
-    .service-heading {
-        font-size: 26px;
-    }
-
-    .img-position-gallery-left {
-        left: 3%;
-        bottom: 7px;
-    }
-
-    .img-position-gallery-right {
-        right: 3%;
-        bottom: 7px;
-    }
-
-    .img-position-work-left {
-        left: 0%;
-        bottom: 8px;
-    }
-
-    .img-position-work-right {
-        right: 0%;
-        bottom: 8px;
-    }
-
-    #bg-banner {
-        padding: 60px 40px;
-    }
-
-    #work .owl-carousel .owl-nav button.owl-prev {
-        left: -50px;
-        height: 98px;
-    }
-
-    #work .owl-carousel .owl-nav button.owl-next {
-        right: -50px;
-        height: 98px;
-    }
-
-    .work-heading {
-        font-size: 22px;
-    }
-
-    #team {
-        padding: 25px 40px;
-    }
-
-    .team-member-text {
-        font-size: 26px;
-    }
-
-    #team .owl-carousel .owl-nav button.owl-prev {
-        left: -50px;
-        height: 98px;
-    }
-
-    #team .owl-carousel .owl-nav button.owl-next {
-        right: -50px;
-        height: 98px;
-    }
-
-    .banner-bg-color {
-        padding: 25px 20px;
-    }
-
-    .connect-text {
-        font-size: 20px;
-    }
-
-    .contact-desc {
-        font-size: 14px;
-    }
-
-    .field-name {
-        height: 48px;
-    }
-
-    #contact-bg-banner [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-        font-size: 50.6px;
-        margin-left: 0px;
-    }
 }
 
 @media screen and (max-width: 800px) {
-    .navbar {
-        padding: 2px 15px 2px 15px;
-    }
-
-    .menu-bg-color {
-        background-image: unset;
-        height: auto;
-    }
-
-    .active .nav-link::before {
-        width: 19%;
-        height: 7px;
-        top: -5px;
-        left: 7px;
-    }
-
-    .active .nav-link::after {
-        width: 19%;
-        height: 7px;
-        left: 7px;
-        bottom: -5px;
-    }
-
-    .nav-item {
-        padding: 20px 10px 10px 91px;
-    }
-
-    #home .owl-carousel .owl-nav button.owl-next {
-        right: 42px;
-    }
-
-    #home .owl-carousel .owl-nav button.owl-prev {
-        left: 42px;
-    }
-
-    #home .main-banner-text {
-        font-size: 30px;
+    .media-top-align {
+        text-align: center;
     }
 
     #home .main-banner-desc {
-        font-size: 15px;
-    }
-
-    .btn-gallery {
-        font-size: 16px;
-        line-height: 35px;
-    }
-
-    .btn-contact {
-        font-size: 16px;
-        line-height: 35px;
-    }
-
-    .img-position-left {
-        left: 10.5%;
-        bottom: 5px;
-    }
-
-    .img-position-right {
-        right: 9.5%;
-        bottom: 5px;
-    }
-
-    .service-desc {
-        font-size: 15px;
-    }
-
-    #services .btn-load-service {
-        font-size: 19px;
-        width: 176px;
-        height: 56px;
-    }
-
-    .service-heading {
-        font-size: 26px;
-    }
-
-    .img-position-gallery-left {
-        left: 3%;
-        bottom: 7px;
-    }
-
-    .img-position-gallery-right {
-        right: 3%;
-        bottom: 7px;
-    }
-
-    .img-position-work-left {
-        left: 0%;
-        bottom: 8px;
-    }
-
-    .img-position-work-right {
-        right: 0%;
-        bottom: 8px;
-    }
-
-    #bg-banner {
-        padding: 60px 40px;
-    }
-
-    #work .owl-carousel .owl-nav button.owl-prev {
-        left: -50px;
-        height: 98px;
-    }
-
-    #work .owl-carousel .owl-nav button.owl-next {
-        right: -50px;
-        height: 98px;
-    }
-
-    .work-heading {
-        font-size: 22px;
-    }
-
-    #team {
-        padding: 25px 40px;
-    }
-
-    .team-member-text {
-        font-size: 26px;
-    }
-
-    #team .owl-carousel .owl-nav button.owl-prev {
-        left: -50px;
-        height: 98px;
-    }
-
-    #team .owl-carousel .owl-nav button.owl-next {
-        right: -50px;
-        height: 98px;
-    }
-
-    .banner-bg-color {
-        padding: 25px 20px;
-    }
-
-    .connect-text {
-        font-size: 20px;
-    }
-
-    .contact-desc {
         font-size: 14px;
     }
 
-    .field-name {
-        height: 48px;
+    .content-setting {
+        padding: 98px 0;
     }
 
-    #contact-bg-banner [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-        font-size: 50.6px;
-        margin-left: 0px;
+    .btn-service {
+        width: 125px;
+        height: 38px;
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .btn-contact {
+        width: 125px;
+        height: 38px;
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        position: relative;
+        top: -70px;
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        background: #fff;
+        width: 5px;
+        height: 27px;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        width: 5px;
+        height: 20px;
+    }
+
+    .service-text {
+        font-size: 30px;
+    }
+
+    .service-desc {
+        font-size: 16px;
+    }
+
+    .media-service-mt {
+        margin-top: 30px;
+    }
+
+    #services .service-work-desc {
+        height: 140px;
+    }
+
+    .service-heading {
+        font-size: 22px;
+    }
+
+    #blog .blog-text {
+        font-size: 30px;
+    }
+
+    #blog .blog-desc {
+        font-size: 17px;
+    }
+
+    #blog .blog-heading {
+        font-size: 19px;
+    }
+
+    #blog .blog-date {
+        font-size: 11px;
+    }
+
+    .btn-load-more {
+        font-size: 16px;
+        width: 145px;
+        height: 41px;
+    }
+
+    .experience-team {
+        font-size: 30px;
+    }
+
+    .media-team-mt {
+        margin-top: 30px;
+    }
+
+    .bg-card {
+        padding: 10px 10px;
+    }
+
+    .body-text {
+        font-size: 14px;
+    }
+
+    .flaticon-old-telephone-ringing:before {
+        font-size: 38px;
+    }
+
+    .flaticon-mail-black-envelope-symbol:before {
+        font-size: 30px;
+    }
+
+    .flaticon-map-pin-marked:before {
+        font-size: 38px;
+    }
+
+    #contact .input-field {
+        width: 100%;
+        height: 42px;
+    }
+
+    .btn-submit {
+        width: 100%;
+        height: 42px;
+        border: none;
+        font-size: 16px;
+    }
+
+    .bg-card {
+        padding: 23px 10px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .navbar {
-        padding: 2px 15px 2px 15px;
-    }
-
-    .menu-bg-color {
-        background-image: unset;
-        height: auto;
-    }
-
-    .active .nav-link::before {
-        width: 19%;
-        height: 7px;
-        top: -5px;
-        left: 7px;
-    }
-
-    .active .nav-link::after {
-        width: 19%;
-        height: 7px;
-        left: 7px;
-        bottom: -5px;
-    }
-
-    .nav-item {
-        padding: 20px 10px 10px 91px;
-    }
-
-    #home .owl-carousel .owl-nav button.owl-next {
-        right: 42px;
-    }
-
-    #home .owl-carousel .owl-nav button.owl-prev {
-        left: 42px;
-    }
-
-    #home .main-banner-text {
-        font-size: 30px;
+    .media-top-align {
+        text-align: center;
     }
 
     #home .main-banner-desc {
-        font-size: 15px;
-    }
-
-    .btn-gallery {
-        font-size: 16px;
-        line-height: 35px;
-    }
-
-    .btn-contact {
-        font-size: 16px;
-        line-height: 35px;
-    }
-
-    .img-position-left {
-        left: 10.5%;
-        bottom: 5px;
-    }
-
-    .img-position-right {
-        right: 9.5%;
-        bottom: 5px;
-    }
-
-    .service-desc {
-        font-size: 15px;
-    }
-
-    #services .btn-load-service {
-        font-size: 19px;
-        width: 176px;
-        height: 56px;
-    }
-
-    .service-heading {
-        font-size: 26px;
-    }
-
-    .img-position-gallery-left {
-        left: 3%;
-        bottom: 7px;
-    }
-
-    .img-position-gallery-right {
-        right: 3%;
-        bottom: 7px;
-    }
-
-    .img-position-work-left {
-        left: 0%;
-        bottom: 8px;
-    }
-
-    .img-position-work-right {
-        right: 0%;
-        bottom: 8px;
-    }
-
-    #bg-banner {
-        padding: 60px 40px;
-    }
-
-    #work .owl-carousel .owl-nav button.owl-prev {
-        left: -50px;
-        height: 98px;
-    }
-
-    #work .owl-carousel .owl-nav button.owl-next {
-        right: -50px;
-        height: 98px;
-    }
-
-    .work-heading {
-        font-size: 22px;
-    }
-
-    #team {
-        padding: 25px 40px;
-    }
-
-    .team-member-text {
-        font-size: 26px;
-    }
-
-    #team .owl-carousel .owl-nav button.owl-prev {
-        left: -50px;
-        height: 98px;
-    }
-
-    #team .owl-carousel .owl-nav button.owl-next {
-        right: -50px;
-        height: 98px;
-    }
-
-    .banner-bg-color {
-        padding: 25px 20px;
-    }
-
-    .connect-text {
-        font-size: 20px;
-    }
-
-    .contact-desc {
         font-size: 14px;
     }
 
-    .field-name {
-        height: 48px;
+    .content-setting {
+        padding: 90px 0;
     }
 
-    #contact-bg-banner [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-        font-size: 50.6px;
-        margin-left: 0px;
+    .btn-service {
+        width: 125px;
+        height: 38px;
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .btn-contact {
+        width: 125px;
+        height: 38px;
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        position: relative;
+        top: -70px;
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        background: #fff;
+        width: 5px;
+        height: 27px;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        width: 5px;
+        height: 20px;
+    }
+
+    .service-text {
+        font-size: 30px;
+    }
+
+    .service-desc {
+        font-size: 16px;
+    }
+
+    .media-service-mt {
+        margin-top: 30px;
+    }
+
+    #services .service-work-desc {
+        height: 140px;
+    }
+
+    .service-heading {
+        font-size: 22px;
+    }
+
+    #blog .blog-text {
+        font-size: 30px;
+    }
+
+    #blog .blog-desc {
+        font-size: 17px;
+    }
+
+    #blog .blog-heading {
+        font-size: 19px;
+    }
+
+    #blog .blog-date {
+        font-size: 11px;
+    }
+
+    .btn-load-more {
+        font-size: 16px;
+        width: 145px;
+        height: 41px;
+    }
+
+    .experience-team {
+        font-size: 30px;
+    }
+
+    .media-team-mt {
+        margin-top: 30px;
+    }
+
+    .bg-card {
+        padding: 10px 10px;
+    }
+
+    .body-text {
+        font-size: 14px;
+    }
+
+    .flaticon-old-telephone-ringing:before {
+        font-size: 38px;
+    }
+
+    .flaticon-mail-black-envelope-symbol:before {
+        font-size: 30px;
+    }
+
+    .flaticon-map-pin-marked:before {
+        font-size: 38px;
+    }
+
+    #contact .input-field {
+        width: 100%;
+        height: 42px;
+    }
+
+    .btn-submit {
+        width: 100%;
+        height: 42px;
+        border: none;
+        font-size: 16px;
+    }
+
+    .bg-card {
+        padding: 23px 10px;
     }
 }
 
 @media screen and (max-width: 414px) {
-    .navbar-nav {
-        margin-left: 50px;
+    #home .main-banner-text {
+        font-size: 22px;
     }
 
-    .active .nav-link::after {
-        width: 30%;
-    }
-
-    .active .nav-link::before {
-        width: 30%;
-    }
-
-    #home .owl-carousel .owl-nav button.owl-prev {
-        left: 8px;
-        bottom: 255px;
-        width: 33px;
-        height: 60px;
-    }
-
-    #home .owl-carousel .owl-nav button.owl-next {
-        right: 8px;
-        bottom: 255px;
-        width: 33px;
-        height: 60px;
-    }
-
-    .btn-gallery {
-        width: 120px;
-        height: 45px;
+    #home .main-banner-desc {
         font-size: 13px;
-        line-height: 30px;
-    }
-
-    .btn-contact {
-        width: 120px;
-        height: 45px;
-        font-size: 13px;
-        line-height: 30px;
     }
 
     .content-setting {
-        padding: 200px 32px;
+        padding: 33px 0;
     }
 
-    #home .main-banner-text {
+    .owl-theme .owl-dots .owl-dot span {
+        width: 4px;
+        height: 13px;
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        background: #fff;
+        width: 4px;
+        height: 20px;
+    }
+
+    .btn-service {
+        width: 90px;
+        height: 29px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .btn-contact {
+        width: 90px;
+        height: 29px;
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .content-setting {
+        padding: 24px 0;
+    }
+
+    .mt-30 {
+        margin-top: 0;
+    }
+
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        top: -49px;
+    }
+
+    .about-padding {
+        padding: 1px 0px 0 16px;
+    }
+
+    .about-text {
         font-size: 28px;
+    }
+
+    .about-desc {
+        font-size: 16px;
     }
 
     .service-text {
@@ -2187,182 +1769,188 @@ button:focus {
     }
 
     .service-desc {
-        font-size: 14px;
+        font-size: 15px;
     }
 
-    .service-heading {
-        font-size: 24px;
+    .media-another-mt {
+        margin-top: 30px;
     }
 
-    .service-text-desc {
+    .media-service-mt {
+        margin-top: 30px;
+    }
+
+    #blog .blog-text {
+        font-size: 26px;
+    }
+
+    #blog .blog-desc {
         font-size: 16px;
     }
 
-    .service-border {
-        padding: 31px 19px;
+    .experience-team {
+        font-size: 26px;
     }
 
-    #services .read-text {
-        font-size: 20px;
-    }
-
-    #services .service-text-desc {
-        height: 140px;
-    }
-
-    .work-desc {
+    .exp-desc {
         font-size: 16px;
     }
 
-    .img-position-work-right {
-        right: -4%;
+    .media-another-team-mt {
+        margin-top: 30px;
     }
 
-    .img-position-work-left {
-        left: -4%;
+    .media-team-mt {
+        margin-top: 30px;
     }
 
-    .service-text {
-        font-size: 23px;
+    #contact .input-field {
+        width: 100%;
+        height: 56px;
     }
 
-    .team-desc-text {
+    #contact .contact-text {
+        font-size: 28px;
+    }
+
+    #contact .contact-desc {
         font-size: 16px;
     }
 
-    .media-mt-contact {
+    .media-contact-mt {
         margin-top: 30px;
     }
 }
 
 @media screen and (max-width: 411px) {
+    .content-setting {
+        padding: 22px 0;
+    }
+
+    .service-work-desc {
+        font-size: 17px;
+    }
 }
 
 @media screen and (max-width: 375px) {
-    #home .owl-carousel .owl-nav button.owl-prev {
-        left: 0px;
+    .content-setting {
+        padding: 1px 0;
     }
 
-    #home .owl-carousel .owl-nav button.owl-next {
-        right: 0px;
-    }
-
-    .navbar-nav {
-        margin-left: 17px;
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        top: -30px;
     }
 }
 
 @media screen and (max-width: 360px) {
-    .img-position-work-right {
-        right: -15%;
-    }
-
-    .img-position-work-left {
-        left: -15%;
-    }
-
-    .btn-contact {
-        width: 114px;
-    }
-
-    .btn-gallery {
-        width: 114px;
-    }
-
-    .navbar-nav {
-        margin-left: 17px;
-    }
 }
 
 
 /*==================== Media Query For Land Scape Mode =====================*/
 @media screen and (max-width:1366px ) and (orientation: landscape) {
+    .content-setting {
+        padding: 208px 0;
+    }
 }
 
 @media screen and (max-width: 1280px) and (orientation: landscape) {
+    .content-setting {
+        padding: 186px 0;
+    }
 }
 
 @media screen and (max-width: 1024px) and (orientation: landscape) {
+    .content-setting {
+        padding: 153px 0;
+    }
+
+    .bg-card {
+        padding: 18px 20px;
+    }
+
+    #contact .input-field {
+        width: 100%;
+        height: 55px;
+    }
 }
 
 @media screen and (max-width: 823px) and (orientation: landscape) {
-    .navbar {
-        padding: 5px 20px 4px 20px;
+    .media-top-align {
+        text-align: center;
     }
 
-    #home .owl-carousel .owl-nav button.owl-prev {
-        left: 30px;
+    .content-setting {
+        padding: 100px 0;
     }
 
-    #home .owl-carousel .owl-nav button.owl-next {
-        right: 30px;
+    .btn-contact {
+        width: 135px;
+        height: 37px;
+        font-size: 16px;
+        line-height: 22px;
     }
 
-    #home .main-banner-text {
+    .btn-service {
+        width: 135px;
+        height: 37px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        position: relative;
+        top: -78px;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        width: 5px;
+        height: 20px;
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        background: #fff;
+        width: 5px;
+        height: 26px;
+    }
+
+    .about-padding {
+        padding: 0px 0px 0 53px;
+    }
+
+    .media-service-mt {
+        margin-top: 30px;
+    }
+
+    #blog .blog-heading {
+        font-size: 19px;
+    }
+
+    .media-team-mt {
+        margin-top: 30px;
+    }
+
+    .body-text {
+        font-size: 13px;
+    }
+
+    #contact .footer-font {
+        font-size: 18px;
+    }
+
+    .bg-card {
+        padding: 29px 9px;
+    }
+
+    .flaticon-old-telephone-ringing:before {
+        font-size: 38px;
+    }
+
+    .flaticon-mail-black-envelope-symbol:before {
         font-size: 30px;
     }
 
-    #home .main-banner-desc {
-        font-size: 15px;
-    }
-
-    .img-position-left {
-        left: 9%;
-    }
-
-    .img-position-right {
-        right: 9%;
-    }
-
-    .service-desc {
-        font-size: 16px;
-    }
-
-    .service-heading {
-        font-size: 26px;
-    }
-
-    .img-position-gallery-left {
-        left: 3%;
-        bottom: 5px;
-    }
-
-    .img-position-gallery-right {
-        right: 3%;
-        bottom: 5px;
-    }
-
-    .img-position-work-left {
-        left: 0%;
-    }
-
-    .img-position-work-right {
-        right: 0%;
-    }
-
-    .connect-text {
-        font-size: 22px;
-    }
-
-    .banner-bg-color {
-        text-align: center;
-        padding: 30px 15px;
-    }
-
-    .work-heading {
-        font-size: 20px;
-    }
-
-    #work .work-desc {
-        height: 202px;
-    }
-
-    .work-desc {
-        font-size: 16px;
-    }
-
-    .contact-desc {
-        font-size: 14px;
+    .flaticon-map-pin-marked:before {
+        font-size: 38px;
     }
 }
 
@@ -2370,72 +1958,335 @@ button:focus {
 }
 
 @media screen and (max-width: 740px) and (orientation: landscape) {
-    .team-desc-text {
-        font-size: 16px;
+    .media-top-align {
+        text-align: center;
     }
 
-    #team .team-desc-text {
-        height: 163px;
+    .content-setting {
+        padding: 81px 0;
     }
 
-    .media-mt-contact {
+    .btn-contact {
+        width: 135px;
+        height: 37px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .btn-service {
+        width: 135px;
+        height: 37px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        position: relative;
+        top: -78px;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        width: 5px;
+        height: 20px;
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        background: #fff;
+        width: 5px;
+        height: 26px;
+    }
+
+    .about-text {
+        font-size: 28px;
+    }
+
+    .about-desc {
+        font-size: 17px;
+    }
+
+    .about-padding {
+        padding: 0px 0px 0 53px;
+    }
+
+    .media-service-mt {
         margin-top: 30px;
     }
 
-    #services .service-text-desc {
-        height: 140px;
+    #blog .blog-heading {
+        font-size: 19px;
     }
 
-    .navbar-nav {
-        margin-left: 115px;
+    #blog .blog-date {
+        font-size: 14px;
+    }
+
+    #blog .blog-news-desc {
+        font-size: 16px;
+    }
+
+    .media-team-mt {
+        margin-top: 30px;
+    }
+
+    .body-text {
+        font-size: 21px;
+    }
+
+    #contact .footer-font {
+        font-size: 18px;
+    }
+
+    .bg-card {
+        padding: 29px 29px;
+    }
+
+    .flaticon-old-telephone-ringing:before {
+        font-size: 47px;
+    }
+
+    .flaticon-mail-black-envelope-symbol:before {
+        font-size: 47px;
+    }
+
+    .flaticon-map-pin-marked:before {
+        font-size: 47px;
+    }
+
+    .media-another-team-mt {
+        margin-top: 30px;
+    }
+
+    .media-another-mt {
+        margin-top: 30px;
+    }
+
+    .media-contact-mt {
+        margin-top: 30px;
     }
 }
 
 @media screen and (max-width: 736px) and (orientation: landscape) {
-    .team-desc-text {
-        font-size: 16px;
+    .media-top-align {
+        text-align: center;
     }
 
-    #team .team-desc-text {
-        height: 163px;
+    .content-setting {
+        padding: 83px 0;
     }
 
-    .media-mt-contact {
+    .btn-contact {
+        width: 135px;
+        height: 37px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .btn-service {
+        width: 135px;
+        height: 37px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        position: relative;
+        top: -78px;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        width: 5px;
+        height: 20px;
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        background: #fff;
+        width: 5px;
+        height: 26px;
+    }
+
+    .about-text {
+        font-size: 28px;
+    }
+
+    .about-desc {
+        font-size: 17px;
+    }
+
+    .about-padding {
+        padding: 0px 0px 0 53px;
+    }
+
+    .media-service-mt {
         margin-top: 30px;
     }
 
-    #services .service-text-desc {
-        height: 140px;
+    #blog .blog-heading {
+        font-size: 19px;
     }
 
-    .navbar-nav {
-        margin-left: 115px;
+    .media-team-mt {
+        margin-top: 30px;
+    }
+
+    .body-text {
+        font-size: 21px;
+    }
+
+    #contact .footer-font {
+        font-size: 18px;
+    }
+
+    .bg-card {
+        padding: 29px 29px;
+    }
+
+    .flaticon-old-telephone-ringing:before {
+        font-size: 47px;
+    }
+
+    .flaticon-mail-black-envelope-symbol:before {
+        font-size: 47px;
+    }
+
+    .flaticon-map-pin-marked:before {
+        font-size: 47px;
+    }
+
+    .media-another-team-mt {
+        margin-top: 30px;
+    }
+
+    .media-another-mt {
+        margin-top: 30px;
+    }
+
+    .media-contact-mt {
+        margin-top: 30px;
     }
 }
 
 @media screen and (max-width: 731px) and (orientation: landscape) {
-    .team-desc-text {
-        font-size: 16px;
+    .media-top-align {
+        text-align: center;
     }
 
-    #team .team-desc-text {
-        height: 163px;
+    .content-setting {
+        padding: 81px 0;
     }
 
-    .media-mt-contact {
+    .btn-contact {
+        width: 135px;
+        height: 37px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .btn-service {
+        width: 135px;
+        height: 37px;
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        position: relative;
+        top: -78px;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        width: 5px;
+        height: 20px;
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+        background: #fff;
+        width: 5px;
+        height: 26px;
+    }
+
+    .about-text {
+        font-size: 28px;
+    }
+
+    .about-desc {
+        font-size: 17px;
+    }
+
+    .about-padding {
+        padding: 0px 0px 0 53px;
+    }
+
+    .media-service-mt {
         margin-top: 30px;
     }
 
-    #services .service-text-desc {
-        height: 140px;
+    #blog .blog-heading {
+        font-size: 19px;
     }
 
-    .navbar-nav {
-        margin-left: 115px;
+    .media-team-mt {
+        margin-top: 30px;
+    }
+
+    .body-text {
+        font-size: 21px;
+    }
+
+    #contact .footer-font {
+        font-size: 18px;
+    }
+
+    .bg-card {
+        padding: 29px 29px;
+    }
+
+    .flaticon-old-telephone-ringing:before {
+        font-size: 47px;
+    }
+
+    .flaticon-mail-black-envelope-symbol:before {
+        font-size: 47px;
+    }
+
+    .flaticon-map-pin-marked:before {
+        font-size: 47px;
+    }
+
+    .media-another-team-mt {
+        margin-top: 30px;
+    }
+
+    .media-another-mt {
+        margin-top: 30px;
+    }
+
+    .media-contact-mt {
+        margin-top: 30px;
     }
 }
 
 @media screen and (max-width: 667px) and (orientation: landscape) {
+    .content-setting {
+        padding: 64px 0;
+    }
+
+    .owl-theme .owl-nav.disabled + .owl-dots {
+        top: -68px;
+    }
+
+    .btn-contact {
+        width: 114px;
+        height: 33px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .btn-service {
+        width: 114px;
+        height: 33px;
+        font-size: 13px;
+        line-height: 18px;
+    }
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape) {
