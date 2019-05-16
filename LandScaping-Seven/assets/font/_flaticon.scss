@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 09/05/2019 10:52
+    Creation date: 13/05/2019 13:13
     */
 
     @font-face {
@@ -37,16 +37,18 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-left:before { content: "\f100"; }
-.flaticon-eye:before { content: "\f101"; }
-.flaticon-old-telephone-ringing:before { content: "\f102"; }
-.flaticon-mail-black-envelope-symbol:before { content: "\f103"; }
-.flaticon-map-pin-marked:before { content: "\f104"; }
-.flaticon-next:before { content: "\f105"; }
+    .flaticon-pouring:before { content: "\f100"; }
+.flaticon-plant:before { content: "\f101"; }
+.flaticon-trim:before { content: "\f102"; }
+.flaticon-fertilizer:before { content: "\f103"; }
+.flaticon-old-telephone-ringing:before { content: "\f104"; }
+.flaticon-mail-black-envelope-symbol:before { content: "\f105"; }
+.flaticon-map-pin-marked:before { content: "\f106"; }
     
-    $font-Flaticon-left: "\f100";
-    $font-Flaticon-eye: "\f101";
-    $font-Flaticon-old-telephone-ringing: "\f102";
-    $font-Flaticon-mail-black-envelope-symbol: "\f103";
-    $font-Flaticon-map-pin-marked: "\f104";
-    $font-Flaticon-next: "\f105";
+    $font-Flaticon-pouring: "\f100";
+    $font-Flaticon-plant: "\f101";
+    $font-Flaticon-trim: "\f102";
+    $font-Flaticon-fertilizer: "\f103";
+    $font-Flaticon-old-telephone-ringing: "\f104";
+    $font-Flaticon-mail-black-envelope-symbol: "\f105";
+    $font-Flaticon-map-pin-marked: "\f106";

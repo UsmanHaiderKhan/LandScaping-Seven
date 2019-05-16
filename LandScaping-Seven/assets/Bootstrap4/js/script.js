@@ -5,7 +5,7 @@
 $(function () {
     var showChar = 200;
     var moretext = "Read More +";
-    var lesstext = "Read Less _";
+    var lesstext = "Read Less -";
     $('.comments-space').each(function () {
         var content = $(this).html();
         if (content.length > showChar) {
@@ -38,68 +38,7 @@ $(function () {
         return false;
     });
 });
-$(function () {
-    var showChar = 240;
-    var moretext = " Read More +";
-    var lesstext = "Read Less -";
-    $('.comments-spaces').each(function () {
-        var content = $(this).html();
-        if (content.length > showChar) {
-            var show_content = content.substr(0, showChar);
-            var hide_content = content.substr(showChar, content.length - showChar);
-            var html = show_content + '<span class="remaining-contents"><span>' + hide_content + '</span>' +
 
-                '<a href="" class="morelinks read-texts mt-10" style="display:block;">' + moretext + '</a>'
-                + '</span>';
-            $(this).html(html);
-        }
-    });
-
-    $(".morelinks").click(function () {
-
-        if ($(this).hasClass("less")) {
-            $(this).removeClass("less");
-            $(this).html(moretext);
-        } else {
-            $(this).addClass("less");
-            $(this).html(lesstext);
-        }
-        $(this).parent().prev().toggle();
-        $(this).prev().toggle();
-        return false;
-    });
-});
-$(function () {
-    var showChar = 240;
-    var moretext = " Read More +";
-    var lesstext = "Read Less -";
-    $('.comments-spacess').each(function () {
-        var content = $(this).html();
-        if (content.length > showChar) {
-            var show_content = content.substr(0, showChar);
-            var hide_content = content.substr(showChar, content.length - showChar);
-            var html = show_content + '<span class="remaining-contents"><span>' + hide_content + '</span>' +
-
-                '<a href="" class="morelinksss read-textss mt-15 text-center" style="display:block;">' + moretext + '</a>'
-                + '</span>';
-            $(this).html(html);
-        }
-    });
-
-    $(".morelinksss").click(function () {
-
-        if ($(this).hasClass("less")) {
-            $(this).removeClass("less");
-            $(this).html(moretext);
-        } else {
-            $(this).addClass("less");
-            $(this).html(lesstext);
-        }
-        $(this).parent().prev().toggle();
-        $(this).prev().toggle();
-        return false;
-    });
-});
 
 /*===================== Smooth Scrolling ======================*/
 $(function () {
@@ -219,42 +158,41 @@ $(function () {
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 0,
-        dots: false,
-        nav: true,
+        dots: true,
+        nav: false,
         slideBy: 1,
         item: 1,
-        navText: ["<i class='flaticon-left'></i>", "<i class='flaticon-next'></i>"],
         responsiveClass: true,
         responsive: {
             0: {
                 items: 1,
-                dots: false,
-                nav: true
+                dots: true,
+                nav: false
             },
             400: {
                 items: 1,
-                dots: false,
-                nav: true
+                dots: true,
+                nav: false
             },
             600: {
                 items: 1,
-                dots: false,
-                nav: true
+                dots: true,
+                nav: false
             },
             768: {
                 items: 1,
-                dots: false,
-                nav: true
+                dots: true,
+                nav: false
             },
             800: {
                 items: 1,
-                dots: false,
-                nav: true
+                dots: true,
+                nav: false
             },
             1000: {
                 items: 1,
-                dots: false,
-                nav: true
+                dots: true,
+                nav: false
             }
         }
     });
@@ -296,10 +234,10 @@ $(function () {
 
 /*===================== Another Load More Script ======================*/
 $(function () {
-    $(".no-display").slice(0, 6).show();
+    $(".no-display").slice(0, 4).show();
     $("#load-more").on('click', function (e) {
         e.preventDefault();
-        $(".no-display:hidden").slice(0, 3).slideDown();
+        $(".no-display:hidden").slice(0, 2).slideDown();
         if ($(".no-display:hidden").length == 0) {
             $("#load-more").fadeOut('slow');
 
